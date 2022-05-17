@@ -31,7 +31,6 @@ class UsersCreateUseCases {
 
 };
 
-
 export {
   UsersCreateUseCases,
 };

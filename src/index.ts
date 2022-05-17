@@ -12,6 +12,6 @@ app.use(express.json());
 app.use(routers);
 
 
-app.listen(process.env.PORT_SERVER, ()=> {
+app.listen(process.env.PORT_APP, ()=> {
   console.log("Start is running 😃 !");
 });
