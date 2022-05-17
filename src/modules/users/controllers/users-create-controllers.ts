@@ -20,11 +20,11 @@ class UsersCreateControllers{
 
     return response.status(200).json({
       error: false,
-      message: "Usuário Cadastrado !!" 
+      message: "Usuário Cadastrado com sucesso !!!" 
     });
   }
 };
 
 export {
-  UsersCreateControllers
+  UsersCreateControllers,
 };

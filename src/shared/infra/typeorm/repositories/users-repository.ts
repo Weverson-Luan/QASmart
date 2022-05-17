@@ -7,5 +7,5 @@ class UsersRepository extends Repository<UserEntity>{
 };
 
 export {
-  UsersRepository
+  UsersRepository,
 };

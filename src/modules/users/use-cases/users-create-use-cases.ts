@@ -27,8 +27,7 @@ class UsersCreateUseCases {
 
       await usersRepository.save(user);
  
-    }
-
+    };
 };
 
 export {

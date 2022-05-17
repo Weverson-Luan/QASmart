@@ -1,9 +1,10 @@
+import { UserEntity } from "shared/infra/typeorm/entity/users.entity";
 import { getCustomRepository } from "typeorm";
 import { UsersRepository } from "../../../shared/infra/typeorm/repositories/users-repository";
 
 class LoadingUsersUseCase {
 
-  async execute(){
+  async execute(): Promise<UserEntity[]>{
     const loadingUsersRepository = getCustomRepository(UsersRepository);
     
     const users = await loadingUsersRepository.find();
