@@ -1,0 +1,14 @@
+{
+  "type": "tipo_banco_de_dados",
+  "host": "onde_sua_banco-dados-roda",
+  "port": "porta_do_banco",
+  "username": "username",
+  "password": "password",
+  "database": "nome_do_banco_de_dados",
+  "synchronize": "opcional",
+  "entities": ["entity/*.ts"],
+  "cli": {
+    "migrationsDir": "migrations",
+    "entitiesDir": ".entity"
+  }
+}
