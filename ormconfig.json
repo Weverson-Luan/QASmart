@@ -5,7 +5,7 @@
   "username": "root",
   "password": "97056799",
   "database": "itech",
-  "synchronize": true,
+  "synchronize": false,
   "entities": ["./src/shared/infra/typeorm/entity/*.ts"],
   "cli": {
     "migrationsDir": "./src/shared/infra/database/migrations",
