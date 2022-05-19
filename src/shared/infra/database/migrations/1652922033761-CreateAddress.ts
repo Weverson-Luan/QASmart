@@ -19,10 +19,6 @@ export class CreateAddress1652922033761 implements MigrationInterface {
                         type: "varchar"
                     },
                     {
-                        name: "state",
-                        type: "varchar"
-                    },
-                    {
                         name: "city",
                         type: "varchar"
                     },
@@ -39,7 +35,7 @@ export class CreateAddress1652922033761 implements MigrationInterface {
                         type: "varchar"
                     },
                     {
-                        name: "uf",
+                        name: "complement",
                         type: "varchar"
                     },
                     {
