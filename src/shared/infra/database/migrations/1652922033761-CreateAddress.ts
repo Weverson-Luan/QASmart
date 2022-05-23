@@ -39,12 +39,26 @@ export class CreateAddress1652922033761 implements MigrationInterface {
                         type: "varchar"
                     },
                     {
+                        name: "user_id",
+                        type: "uuid",
+                    },
+                    {
                         name: "created_at",
                         type: "timestamp",
                         default: "now()"
                     },
 
                 ],
+                foreignKeys: [
+                    {
+                        name: "FK_Address_users",
+                        referencedTableName: "users",
+                        referencedColumnNames: ["id"],
+                        columnNames: ["user_id"],
+                        onDelete: "CASCADE",
+                        onUpdate: "CASCADE"
+                    }
+                ]
             })
         )
     }

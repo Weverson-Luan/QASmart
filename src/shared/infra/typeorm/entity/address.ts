@@ -1,5 +1,6 @@
-import { Entity, PrimaryColumn, Column, CreateDateColumn } from "typeorm";
+import { Entity, PrimaryColumn, Column, CreateDateColumn, ManyToOne, JoinColumn } from "typeorm";
 import { v4 as UuidV4} from "uuid";
+import { UserEntity } from "./users.entity";
 
 @Entity("address")
 class AddressEntity {
@@ -24,6 +25,11 @@ class AddressEntity {
 
   @Column()
   complement: string;
+
+  @ManyToOne(() => UserEntity)
+  @JoinColumn({name: "user_id"})
+  @Column()
+  user_id: string;
 
   @CreateDateColumn()
   created_at: Date;

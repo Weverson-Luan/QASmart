@@ -6,5 +6,6 @@ export interface ICreateAddressDTO {
   street: string;
   number: string;
   complement?: string;
+  user_id: string;
   created_at?: Date;
 };
