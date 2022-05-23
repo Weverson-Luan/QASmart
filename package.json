@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev --transpile-only src/index.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node --transpile-only ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
