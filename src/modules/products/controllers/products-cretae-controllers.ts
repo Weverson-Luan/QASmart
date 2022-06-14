@@ -17,7 +17,7 @@ class ProductsCreateControllers{
 
     return response.status(200).json({
       error: false,
-      message: 'Usuário Cadastrado com sucesso !!!' 
+      message: 'Produto Cadastrado com sucesso !!!' 
     });
   }
 };
