@@ -1,6 +1,5 @@
-import { Request, Response,  } from "express";
-import { ProductsCreateUseCases } from "../use-cases/products-create-use-cases";
-
+import { Request, Response,  } from 'express';
+import { ProductsCreateUseCases } from '../use-cases/products-create-use-cases';
 
 class ProductsCreateControllers{
 
@@ -18,7 +17,7 @@ class ProductsCreateControllers{
 
     return response.status(200).json({
       error: false,
-      message: "Usuário Cadastrado com sucesso !!!" 
+      message: 'Usuário Cadastrado com sucesso !!!' 
     });
   }
 };

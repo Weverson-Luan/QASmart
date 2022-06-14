@@ -1,7 +1,7 @@
-import { getCustomRepository } from "typeorm";
+import { getCustomRepository } from 'typeorm';
 
-import { IProductCreate } from "../dtos/create-products";
-import { ProductRepository } from "../../../shared/infra/typeorm/repositories/products-repository";
+import { IProductCreate } from '../dtos/create-products';
+import { ProductRepository } from '../../../shared/infra/typeorm/repositories/products-repository';
 
 
 class ProductsCreateUseCases {
