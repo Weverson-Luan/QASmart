@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  database-itech:
+    image: postgres
+    container_name: itech_database
+    restart: always
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_USER=itech
+      - POSTGRES_PASSWORD=uLbFDceZIApV
+      - POSTGRES_DB=itech
+    volumes:
+      - pgdata:/data/postgres
+  app-itech:
+    build: .
+    container_name: itech_app
+    ports:
+      - 3333:3333
+      - 9229:9229 
+    volumes:
+      - .:/usr/app
+    links:
+      - database
+    depends_on:
+      - database
+
+volumes:
+  pgdata:
+    driver: local

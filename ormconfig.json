@@ -1,12 +1,12 @@
 {
-  "type": "mysql",
+  "type": "postgres",
   "host": "localhost",
-  "port": 3306,
-  "username": "root",
-  "password": "97056799",
+  "port": 5434,
+  "username": "itech",
+  "password": "uLbFDceZIApV",
   "database": "itech",
-  "synchronize": true,
   "entities": ["./src/shared/infra/typeorm/entity/*.ts"],
+  "migrations": ["./src/shared/infra/database/migrations/*.ts"],
   "cli": {
     "migrationsDir": "./src/shared/infra/database/migrations",
     "entitiesDir": "./src/shared/infra/typeorm/entity"
