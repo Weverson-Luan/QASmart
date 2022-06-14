@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { LoadingProductsUseCase } from "../use-cases/loading-products-use-case";
 
-class LoadingUsersController {
+class LoadingProductsController {
 
    async handle(request:Request, response: Response): Promise<Response>{
     try {
@@ -21,5 +21,5 @@ class LoadingUsersController {
 };
 
 export {
-  LoadingUsersController,
+  LoadingProductsController,
 };
